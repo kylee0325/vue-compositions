@@ -9,7 +9,7 @@ const versionArr = currentVersion.split(".");
 const [mainVersion, subVersion, phaseVersion] = versionArr;
 
 // 默认版本号
-const defaultVersion = `${mainVersion}.${subVersion}.${+phaseVersion}`;
+const defaultVersion = `${mainVersion}.${subVersion}.${+phaseVersion+1}`;
 
 let newVersion = defaultVersion;
 
