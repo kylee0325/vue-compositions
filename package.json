@@ -1,0 +1,62 @@
+{
+  "name": "vue-compositions",
+  "version": "0.2.9",
+  "description": "Collection of Vue Composition Apis",
+  "main": "index.cjs.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "copy": "cp package.json README.md dist",
+    "build": "rollup -c && npm run copy",
+    "publish2": "rollup -c && npm run copy && node scripts/publish.js",
+    "test": "jest",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylee0325/vue-compositions.git"
+  },
+  "keywords": [
+    "vue",
+    "composition-api",
+    "hooks",
+    "vue3",
+    "vue2"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylee0325/vue-compositions/issues"
+  },
+  "homepage": "https://github.com/kylee0325/vue-compositions#readme",
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "dependencies": {
+    "vue-demi": "^0.11.4"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "commander": "^8.2.0",
+    "jest": "^27.2.5",
+    "rollup": "^2.58.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "shelljs": "^0.8.4",
+    "ts-jest": "^27.0.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4",
+    "vitepress": "^0.20.0",
+    "vue": "^3.2.20"
+  }
+}
