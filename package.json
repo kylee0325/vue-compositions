@@ -7,8 +7,9 @@
   "types": "index.d.ts",
   "scripts": {
     "copy": "cp package.json README.md dist",
-    "build": "rollup -c && npm run copy",
-    "publish2": "rollup -c && npm run copy && node scripts/publish.js",
+    "build": "npm run clean && rollup -c && npm run copy",
+    "publish2": "npm run clean && rollup -c && npm run copy && node scripts/publish.js",
+    "clean": "rimraf dist",
     "test": "jest",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -59,6 +60,7 @@
     "jest": "^27.2.5",
     "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.58.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^4.0.0",
@@ -74,8 +76,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
