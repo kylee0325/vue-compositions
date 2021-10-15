@@ -1,19 +1,19 @@
 <template>
   <p>{{ state }}</p>
-  <button @click="toggle()">toggle</button>
-  <button @click="setTrue">True</button>
-  <button @click="setFalse">False</button>
+  <a-button @click="toggle()">toggle</a-button>
+  <a-button type="primary" @click="setTrue">True</a-button>
+  <a-button @click="setFalse">False</a-button>
 </template>
 
 <script>
-import { useBoolean } from "../../../src";
+import { useBoolean } from '../../../src'
 
 export default {
   setup() {
-    const res = useBoolean();
+    const res = useBoolean()
     return {
-      ...res,
-    };
-  },
-};
+      ...res
+    }
+  }
+}
 </script>

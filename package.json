@@ -1,6 +1,6 @@
 {
   "name": "vue-compositions",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "Collection of Vue Composition Apis",
   "main": "index.cjs.js",
   "module": "index.esm.js",
@@ -35,6 +35,7 @@
     "vue": "^2.0.0 || >=3.0.0"
   },
   "dependencies": {
+    "ant-design-vue": "^2.2.8",
     "vue-demi": "^0.11.4"
   },
   "peerDependenciesMeta": {
@@ -43,9 +44,20 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@types/jest": "^27.0.2",
     "commander": "^8.2.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.19.1",
     "jest": "^27.2.5",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
     "rollup": "^2.58.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^4.0.0",
@@ -58,5 +70,18 @@
     "typescript": "^4.4.4",
     "vitepress": "^0.20.0",
     "vue": "^3.2.20"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/**/*.ts": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }

@@ -2,9 +2,9 @@ name: vue-compositions-publish
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build-and-deploy:
@@ -22,7 +22,7 @@ jobs:
       # 依赖安装
       - name: Install Dependencies
         run: npm install
-        
+
       # NPM 包发布
       - name: Release NPM Package
         env:

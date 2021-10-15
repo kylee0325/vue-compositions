@@ -1,7 +1,10 @@
-import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent } from 'vue'
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
 
-const UseBoolean = defineAsyncComponent(() => import("./useBoolean.vue"));
+const UseBoolean = defineAsyncComponent(() => import('./useBoolean.vue'))
 
 export default function registerComponent(app) {
-  app.component("UseBoolean", UseBoolean);
+  app.use(Antd)
+  app.component('UseBoolean', UseBoolean)
 }
