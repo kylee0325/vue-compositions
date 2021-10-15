@@ -6,6 +6,7 @@ dist
 .history
 .vscode
 .husky
+yarn.lock
 *.suo
 *.ntvs*
 *.njsproj
