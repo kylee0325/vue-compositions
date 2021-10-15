@@ -6,7 +6,7 @@
   "module": "index.esm.js",
   "types": "index.d.ts",
   "scripts": {
-    "cm": "cz",
+    "cm": "git-cz",
     "copy": "cp package.json README.md dist",
     "build": "npm run clean && rollup -c && npm run copy",
     "publish2": "npm run clean && rollup -c && npm run copy && node scripts/publish.js",
