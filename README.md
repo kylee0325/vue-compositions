@@ -2,14 +2,14 @@
 
 Collection of Vue Composition Apis
 
-# Install
+## Install
 
 ```js
 npm install --save vue-compositions
 yarn add vue-compositions
 ```
 
-# Release
+## Release
 
 npm run build
 npm run publish2

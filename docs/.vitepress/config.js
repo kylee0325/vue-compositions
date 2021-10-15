@@ -1,41 +1,90 @@
 const config = {
-  title: "vue-compositions",
-  base: "/vue-compositions/",
-  lang: "ZH-CN",
-  description: "Collection of Vue Composition Apis",
+  title: 'vue-compositions',
+  base: '/vue-compositions/',
+  lang: 'ZH-CN',
+  description: 'Collection of Vue Composition Apis',
   header: [],
   themeConfig: {
-    repo: "kylee0325/vue-compositions",
-    docsRepo: "kylee0325/vue-compositions",
-    docsBranch: "master",
-    docsDir: "docs",
+    repo: 'kylee0325/vue-compositions',
+    docsRepo: 'kylee0325/vue-compositions',
+    docsBranch: 'master',
+    docsDir: 'docs',
     editLinks: true,
     locales: {
-      "/": {
+      '/': {
         nav: [
           {
-            text: "Changelog",
-            link: "https://github.com/lmhcoding/vhook/blob/master/CHANGELOG.md",
-          },
+            text: 'Changelog',
+            link: 'https://github.com/kylee0325/vue-compositions/blob/master/CHANGELOG.md'
+          }
         ],
         sidebar: [
-          { text: "Introduction", link: "/" },
+          { text: 'Introduction', link: '/' },
           {
-            text: "State",
+            text: 'State',
             collapsable: false,
-            children: [{ text: "useBoolean", link: "/state/useBoolean" }],
+            children: [
+              { text: 'useTitle', link: '/state/useTitle' },
+              { text: 'useToggle', link: '/state/useToggle' },
+              { text: 'useBoolean', link: '/state/useBoolean' },
+              { text: 'useHash', link: '/state/useHash' },
+              { text: 'useHistory', link: '/state/useHistory' }
+            ]
           },
-        ],
-      },
-    },
+          {
+            text: 'Dom',
+            collapsable: false,
+            children: [
+              { text: 'useEvent', link: '/dom/useEvent' },
+              { text: 'useEventRef', link: '/dom/useEventRef' }
+            ]
+          },
+          {
+            text: 'Lifecycles',
+            collapsable: false,
+            children: [{ text: 'useLifecycles', link: '/lifecycles/useLifecycles' }]
+          },
+          {
+            text: 'SideEffects',
+            collapsable: false,
+            children: [
+              { text: 'useDebounce', link: '/effects/useDebounce' },
+              { text: 'useDebounceFn', link: '/effects/useDebounceFn' },
+              { text: 'useInterval', link: '/effects/useInterval' },
+              { text: 'useTimeout', link: '/effects/useTimeout' },
+              { text: 'useTimeoutFn', link: '/effects/useTimeoutFn' }
+            ]
+          },
+          {
+            text: 'Storage',
+            collapsable: false,
+            children: [
+              { text: 'useLocalStorage', link: '/storage/useLocalStorage' },
+              { text: 'useSessionStorage', link: '/storage/useSessionStorage' },
+              { text: 'useStorage', link: '/storage/useStorage' }
+            ]
+          },
+          {
+            text: 'Sensors',
+            collapsable: false,
+            children: [
+              { text: 'useWindowScroll', link: '/sensors/useWindowScroll' },
+              { text: 'useResize', link: '/sensors/useResize' },
+              { text: 'useScroll', link: '/sensors/useScroll' },
+              { text: 'useScrollRef', link: '/sensors/useScrollRef' }
+            ]
+          }
+        ]
+      }
+    }
   },
   locales: {
-    "/": {
-      lang: "ZH-CN",
-      title: "vue-compositions",
-      description: "Collection of Vue Composition Apis",
-    },
-  },
-};
+    '/': {
+      lang: 'ZH-CN',
+      title: 'vue-compositions',
+      description: 'Collection of Vue Composition Apis'
+    }
+  }
+}
 
-module.exports = config;
+module.exports = config
