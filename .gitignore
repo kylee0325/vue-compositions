@@ -5,6 +5,7 @@ dist
 .idea
 .history
 .vscode
+.husky
 *.suo
 *.ntvs*
 *.njsproj
