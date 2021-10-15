@@ -1,6 +1,15 @@
 # vue-compositions
+
 Collection of Vue Composition Apis
 
-# 发布
+# Install
+
+```js
+npm install --save vue-compositions
+yarn add vue-compositions
+```
+
+# Release
+
 npm run build
 npm run publish2
