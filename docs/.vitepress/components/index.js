@@ -23,6 +23,7 @@ const UseTimeoutFn = defineAsyncComponent(() => import('./useTimeoutFn.vue'))
 const UseTitle = defineAsyncComponent(() => import('./useTitle.vue'))
 const UseToggle = defineAsyncComponent(() => import('./useToggle.vue'))
 const UseWindowScroll = defineAsyncComponent(() => import('./useWindowScroll.vue'))
+const ArrayToTree = defineAsyncComponent(() => import('./arrayToTree.vue'))
 
 export default function registerComponent(app) {
   app.use(Antd)
@@ -46,4 +47,5 @@ export default function registerComponent(app) {
   app.component('UseTitle', UseTitle)
   app.component('UseToggle', UseToggle)
   app.component('UseWindowScroll', UseWindowScroll)
+  app.component('ArrayToTree', ArrayToTree)
 }

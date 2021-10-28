@@ -22,7 +22,6 @@ const config = {
           { text: 'Introduction', link: '/' },
           {
             text: 'State',
-            collapsable: false,
             children: [
               { text: 'useTitle', link: '/state/useTitle' },
               { text: 'useToggle', link: '/state/useToggle' },
@@ -33,7 +32,6 @@ const config = {
           },
           {
             text: 'Dom',
-            collapsable: false,
             children: [
               { text: 'useEvent', link: '/dom/useEvent' },
               { text: 'useEventRef', link: '/dom/useEventRef' }
@@ -41,12 +39,10 @@ const config = {
           },
           {
             text: 'Lifecycles',
-            collapsable: false,
             children: [{ text: 'useLifecycles', link: '/lifecycles/useLifecycles' }]
           },
           {
             text: 'SideEffects',
-            collapsable: false,
             children: [
               { text: 'useDebounce', link: '/effects/useDebounce' },
               { text: 'useDebounceFn', link: '/effects/useDebounceFn' },
@@ -57,7 +53,6 @@ const config = {
           },
           {
             text: 'Storage',
-            collapsable: false,
             children: [
               { text: 'useLocalStorage', link: '/storage/useLocalStorage' },
               { text: 'useSessionStorage', link: '/storage/useSessionStorage' },
@@ -66,13 +61,16 @@ const config = {
           },
           {
             text: 'Sensors',
-            collapsable: false,
             children: [
               { text: 'useWindowScroll', link: '/sensors/useWindowScroll' },
               { text: 'useResize', link: '/sensors/useResize' },
               { text: 'useScroll', link: '/sensors/useScroll' },
               { text: 'useScrollRef', link: '/sensors/useScrollRef' }
             ]
+          },
+          {
+            text: 'Utils',
+            children: [{ text: 'arrayToTree', link: '/utils/arrayToTree' }]
           }
         ]
       }
