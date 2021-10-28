@@ -1,0 +1,1 @@
+import{u as a}from"./useDebounce.8fd88e11.js";import{s as c}from"./app.3968e24d.js";function f(s,n=200){const e=a(0,n);let u;return c(e,()=>{s(...u)},{flush:"sync"}),function(...o){u=o,e.value++}}export{f as u};

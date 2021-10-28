@@ -1,0 +1,1 @@
+import{t as n}from"./useHistory.d7897cc0.js";import{m as a,n as i}from"./app.3968e24d.js";function c(s=1e3,u=!0){const t=i(!1);let e;const o=()=>{e&&(clearTimeout(e),e=null)},r=()=>{t.value=!1,o(),e=window.setTimeout(()=>{t.value=!0,e=null},s)};return u&&r(),n(()=>{o()}),{ready:a(t),start:()=>r(),stop:o}}export{c as u};

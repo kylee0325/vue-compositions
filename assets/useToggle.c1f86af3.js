@@ -1,0 +1,1 @@
+import{m as a,n as g}from"./app.3968e24d.js";const p=(o=!1,t)=>{const s=g(o),e=t===void 0?!o:t,r=n=>{n!==void 0?s.value=n:s.value=s.value===o?e:o},v=()=>{s.value=o},c=()=>{s.value=e};return{state:a(s),setDefault:v,setRight:c,toggle:r}};export{p as u};

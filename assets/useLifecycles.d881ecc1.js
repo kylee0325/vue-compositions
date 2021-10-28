@@ -1,1 +1,0 @@
-import{b as e}from"./useHistory.5a34968c.js";import{_ as o,c as s,o as c}from"./app.96448a19.js";const t={setup(){e(()=>console.log("mounted"),()=>console.log("unmounted"))}};function n(r,a,l,p,u,f){return c(),s("p",null,"\u8BF7\u70B9\u51FBF12\u770Blog")}var m=o(t,[["render",n]]);export{m as default};

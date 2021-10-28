@@ -1,0 +1,1 @@
+import{u as n}from"./useHistory.d7897cc0.js";import{t as f}from"./index.esm.d75c6ef5.js";import{m as l,n as a}from"./app.3968e24d.js";function v(c,r=200){const t=a(0),o=a(0);let e=()=>{s.value&&(t.value=s.value.scrollLeft,o.value=s.value.scrollTop)};r&&(e=f(r,e));const[s,u]=n("scroll",e,{capture:!1,passive:!0},c);return[l(t),l(o),u]}export{v as u};

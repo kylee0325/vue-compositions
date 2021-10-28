@@ -1,0 +1,1 @@
+import{m as s,n as l}from"./app.3968e24d.js";function c(t,r,e){const n=t.getItem(r);if(n)try{return JSON.parse(n)}catch{}return e}function i(t,r,e=localStorage){const n=c(e,t,r),a=l(null),o=u=>{u===void 0?(e.removeItem(t),a.value=null):(e.setItem(t,JSON.stringify(u)),a.value=u)};return o(n),[s(a),o]}export{i as u};

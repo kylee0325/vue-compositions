@@ -1,1 +1,0 @@
-import{q as a,g as c,h as i}from"./app.96448a19.js";function f(t,r=200){let e;const n=()=>{e&&clearTimeout(e)};return c()&&i(()=>{n()}),a((o,s)=>({get(){return o(),t},set(u){n(),e=setTimeout(()=>{t=u,e=null,s()},r)}}))}export{f as u};

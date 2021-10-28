@@ -1,0 +1,1 @@
+import{u as n}from"./useHistory.d7897cc0.js";import{n as o,_ as a,c as u,o as f}from"./app.3968e24d.js";function p(e,r,c){const t=o(null),[,s]=n(e,r,c,t);return[t,s]}const i={setup(){const[e]=p("click",()=>{alert("click")},!0);return{target:e}}},l={ref:"target"};function _(e,r,c,t,s,d){return f(),u("button",l,"click",512)}var $=a(i,[["render",_]]);export{$ as default};
