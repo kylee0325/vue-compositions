@@ -1,6 +1,6 @@
 {
   "name": "vue-compositions",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Collection of Vue Composition Apis",
   "main": "index.cjs.js",
   "module": "index.esm.js",
